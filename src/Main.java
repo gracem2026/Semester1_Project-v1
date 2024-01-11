@@ -19,10 +19,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         // int currentPos = rd.nextInt(565);
         instructions();
+        //credits();
         game(-1);
         //testing
         //test to see if credits can be printed
-        //credits();
+
         //playAgain();
     }
     // start a new game
@@ -92,7 +93,7 @@ public class Main {
         if (a != currentArray[0] && a != currentArray[1] && a != currentArray[2] && a != currentArray[3]) {
             System.out.println("Your number is not among the list of numbers, try again: ");
             //testing
-            //System.out.println("testing result: incorrect");
+            System.out.println("testing result: incorrect");
             a = scanner.nextInt();
         } else {
             if (a == currentArray[0]) {
@@ -113,7 +114,7 @@ public class Main {
                 remainingC = currentArray[2];
             }
             //testing
-            //System.out.println("testing result: correct");
+            System.out.println("testing result: correct");
         }
         System.out.println("Remaining numbers include: " + remainingA + " " + remainingB + " " + remainingC);
 
@@ -364,7 +365,7 @@ public class Main {
             if (a == 0) {
                 array[0] = Integer.parseInt(tempNum);
                 //testing
-                //System.out.println(array[0]);
+                System.out.println(array[0]);
             }
             else if (a == 2) {
                 if (str.substring(a, a+2).equals("10")) {
@@ -374,7 +375,7 @@ public class Main {
                     array[1] = Integer.parseInt(tempNum);
                 }
                 //testing
-                //System.out.println(array[1]);
+                System.out.println(array[1]);
             }
             else if (a == 4) {
                 if (str.substring(a, a+2).equals("10")) {
@@ -384,7 +385,7 @@ public class Main {
                     array[2] = Integer.parseInt(tempNum);
                 }
                 //testing
-                //System.out.println(array[2]);
+                System.out.println(array[2]);
             }
             else if (a == 6) {
                 if (str.substring(a, str.length()).equals("10")) {
@@ -394,7 +395,7 @@ public class Main {
                     array[3] = Integer.parseInt(tempNum);
                 }
                 //testing
-                //System.out.println(array[3]);
+                System.out.println(array[3]);
             }
         }
         return array;
